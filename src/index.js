@@ -1,13 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import App from './test';
+import LineChart2 from './LineChart2';
+import LineChart3 from './LineChart3';
+import Charttest from './charttest';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <App />
+    <LineChart2 />
+    <LineChart3 />
+    {/* <Charttest /> */}
   </React.StrictMode>
 );
 
