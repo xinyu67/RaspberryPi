@@ -118,9 +118,10 @@ client.on('message', (topic, message) => {
   })
 
 //api//
+const PORT = 8000;
 app.use(cors());
 app.use("/", router);
-app.listen(8000, () => {
+app.listen(PORT, () => {
   console.log("運行於8000端口");
 })
 
