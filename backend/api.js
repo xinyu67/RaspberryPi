@@ -3,7 +3,7 @@ const router = express.Router();
 const fs = require("fs");
 const StoredData = require("./storedDataSchema");
 
-router.get("/realTimeData", async (req, res) => {
+router.get("/realtimeData", async (req, res) => {
   try {
     const localData = await fs.promises.readFile("realtimeData.json");
     const realtimeData = JSON.parse(localData.toString());
